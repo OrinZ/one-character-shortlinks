@@ -1,11 +1,19 @@
-# One!!!!1!1!! Character Shortlinks
+=== One!!!!1!1!! Character Shortlinks ===
+Contributors: Orin Zebest
+Tags: shortlink, unicode, emoji, redirection
+Donate link: http://ori.nz/🔗
+Requires at least: 5.0
+Tested up to: 5.3.2
+Requires PHP: 5.6
+Stable tag: ↉
+License: Lesser GPLv3 or later
+License URI: https://www.gnu.org/licenses/lgpl-3.0.html
 
-(If you're reading this and it's the current version, I'm afraid you're a bit early. I'm in the process of developing the first working implementation. Come back in a bit!)
+Enable the shortest possible URLs everywhere on your site: a single (selectable) character. Use Unicode's 143,732 categorized symbols, including emoji.
+
 
 == Description ==
-Wordpress plugin enabling every location on your site to be accessed from the shortest possible URL: a single re-assignable character.
-
-As of Unicode 13.0 in 2020, that provides a possible 143,732 unique characters in 154 scripts, including emoji 🤯✍🔣🎨💥🎩🏆💕
+Enable every location on your site to be accessed from the shortest possible URL: a single re-assignable character. As of Unicode 13.0 in 2020, that provides a possible 143,732 unique characters in 154 scripts, including emoji 🤯✍🔣🎨💥🎩🏆💕
 
 Features include:
 * assign symbols automatically, choose from categories, or specify per link
@@ -65,9 +73,9 @@ I was excited to make it, I suppose (!). You can consult [Know Your Meme: The "!
 
 
 == Screenshots ==
-1. screenshot description for screenshot-1.(png|jpg|jpeg|gif)
-2. screenshot description for screenshot-2.(png|jpg|jpeg|gif)
-3. et cetera
+1. The screenshot description corresponds to screenshot-1.(png|jpg|jpeg|gif).
+2. The screenshot description corresponds to screenshot-2.(png|jpg|jpeg|gif).
+3. The screenshot description corresponds to screenshot-3.(png|jpg|jpeg|gif).
 
 == Changelog ==
 
