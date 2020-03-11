@@ -50,6 +50,9 @@ Perhaps one which should be obvious is that users might not know how to speak or
 = Instead of redirecting, can the single character simply be the URL? =
 For this senario, the best case would probably be to use Wordpress' built-in permalink field, found on a post/page/media's edit page.
 
+= Can I use this to link to websites besides my own? =
+Theoretically yes, and full implementation is planned for a future release.
+
 = Can usage statistics be tracked? =
 Well no --- but actually yes. While it doesn't save such data itself, it was also designed not to interfere with existing solutions for tracking stats. If you do encounter trouble please add some details on the [issue tracker](https://github.com/OrinZ/one-character-shortlinks/issues).
 
@@ -62,7 +65,7 @@ Not yet, but planned for a future version.
 = Can I draw a symbol I want to find characters in Unicode? =
 A very snazzy idea, which could find its way into an update one day (especially if someone familiar with that technique contributes their skill).
 
-= How about *two* character shortlinks? = 
+= How about *two* character shortlinks? =
 Unlikely, as the current amount of characters ought to be plenty. However, if you feel so moved for whatever reason, such as after hitting the 143,732 character limit (wow, really?) feel free to reprogram the plugin as you see fit. The LGPL software license allows free modification (and even inclusion in closed-source applications). It would be most kind to also share your changes to [the development repo](https://github.com/OrinZ/one-character-shortlinks/), not to mention intriguing to check out your HECKIN' LARGE site. No clue what the plugin would be renamed, though.
 
 = I have a (big or little) idea for a neat improvement! =

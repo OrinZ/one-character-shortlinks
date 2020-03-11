@@ -17,13 +17,13 @@ Features include:
 ## Installation
 1. Upload the "one-character-shortlinks" folder and its contents to your "/wp-content/plugins/" directory.
 1. Activate the plugin through the 'Plugins' page of your WordPress admin.
-1. The plugin will automatically assign 1-character shortlinks and replace the default wp.me implementation. Old wp.me links still function.
-1. Access configuration settings under the Wordpress admin's 'Posts' menu.
+1. The plugin will automatically assign single-character shortlinks and replace the default wp.me implementation. Old wp.me links still function.
+1. Access the configuration settings under the Wordpress admin's 'Posts' menu.
 
 
 ## Frequently Asked Questions
 ### Why are some characters unavailable?
-For both performance reasons and lack of interest, Unicode's first 127 characters (the uppercase and lowercase Latin alphabet, numbers, ASCII punctuation) are excluded. They are also more likely to interfere with existing redirection rules.
+For both performance reasons and perceived lack of interest, Unicode's first 127 characters (the uppercase and lowercase Latin alphabet, numbers, ASCII punctuation) are excluded. They are also more likely to interfere with existing redirection rules.
 
 ### Why can't I use ______ character set?
 Look on the plugin's configuration page (located in your Wordpress admin panel within the 'Posts' menu) and you can enable many more sets which are disabled by default. As noted above, only basic ASCII is unusable. Unicode includes even ancient scripts such as "Linear A" from ancient Crete, which remains undeciphered after thousands of years.
@@ -38,16 +38,19 @@ A tricky consequence of varying systems, browsers, fonts, etc. The underlying in
 This is the internal representation which the browser requests from your web server, usually called "URL encoding" or "percent-encoding" (%20, %3F, %u1234 for example). It won't generally be shown in modern browsers, but could be what you get if you copy the URL from the address bar. Try copying from another source on your site (or decoding it with a quick search).
 
 ### Are there drawbacks to using Unicode links I should consider?
-Perhaps one which should be obvious is that users might not know how to speak or input links which are abstract symbols --- especially unfamiliar ones. This can be mitigated by providing good link copying options, and by selecting only certain character sets (emoji should be relatively safe). As mentioned above, there is also the confusion of empty characters (�□) or percent-encoding (%20, %3F, %u1234). There's a slim chance a user could even fail to recognize your link *as a link* because "it looked weird!" In fairness to Unicode, this can be understood as a prototypical example of a [PEBKAC](https://www.computerhope.com/jargon/p/pebkac.htm)-type situation.
+Perhaps one which should be obvious is that users might not know how to speak or input links which are abstract symbols &mdash; especially unfamiliar ones. This can be mitigated by providing good link copying options, and by selecting only certain character sets (emoji should be relatively safe). As mentioned above, there is also the confusion of empty characters (�□) or percent-encoding (%20, %3F, %u1234). There's a slim chance a user could even fail to recognize your link *as a link* because "it looked weird!" In fairness to Unicode, this can be understood as a prototypical example of a [PEBKAC](https://www.computerhope.com/jargon/p/pebkac.htm)-type situation.
 
 ### Instead of redirecting, can the single character simply be the URL?
 For this senario, the best case would probably be to use Wordpress' built-in permalink field, found on a post/page/media's edit page.
 
+### Can I use this to link to websites besides my own?
+Theoretically yes, and full implementation is planned for a future release.
+
 ### Can usage statistics be tracked?
-Well no --- but actually yes. While it doesn't save such data itself, it was also designed not to interfere with existing solutions for tracking stats. If you do encounter trouble please add some details on the [issue tracker](https://github.com/OrinZ/one-character-shortlinks/issues).
+Well no &mdash; but actually yes. While it doesn't save such data itself, it was also designed not to interfere with existing solutions for tracking stats. If you do encounter trouble please add some details on the [issue tracker](https://github.com/OrinZ/one-character-shortlinks/issues).
 
 ### Could this potentially allow phishing or other deception by using characters which look similar?
-Known as "punycode" attacks, these URL hacks can indeed be quite problematic. The additional risk here should be very low, as custom shortlinks can only be added by admins or other users with sufficient editing priviledges --- users who can already change permalinks. Also, it only functions on one's own website. **And** it cannot modify a domain name at all.
+Known as "punycode" attacks, these URL hacks can indeed be quite problematic. The additional risk here should be very low, as custom shortlinks can only be added by admins or other users with sufficient editing priviledges &mdash; users who can already change permalinks. Also, it only functions on one's own website. **And** it cannot modify a domain name at all.
 
 ### Can the type of redirect (301, 302, 308) be altered?
 Not yet, but planned for a future version.
